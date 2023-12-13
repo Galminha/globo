@@ -33,14 +33,14 @@ img{
 }
 
 header{
-    display: block;
+    display: flex;
     width: 100%;
     margin: 0 172.5px 0 172.5px;
     box-sizing: 100%;
 }
 .container {
     padding: 0px 36px ;
-    justify-content:space-around;
+    display: flex;
 }
 
 .header-item{
@@ -52,14 +52,15 @@ header{
     margin: 1px;
     display: flex;
     width: fit-content;
-    align-items: center;
-}
-img-menu{
-    padding: 13px;
-    margin: 1px;
+    align-items: flex-start;
 }
 #menu >span{
     margin-left: 13px;
+    align-items: flex-start;
+}
+
+.header-item logo{
+    align-items: center;
 }
 /*
 header .header-item{
