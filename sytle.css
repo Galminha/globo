@@ -15,7 +15,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
     color: black;
     font-family: 'Roboto', sans-serif;
@@ -35,33 +34,55 @@ img{
 header{
     display: flex;
     width: 100%;
-    margin: 0 172.5px 0 172.5px;
+    margin: 0px 172.5px 0px 172.5px;
+    padding: 0px 36px 0px 36px;
     box-sizing: 100%;
 }
 .container {
-    padding: 0px 36px ;
     display: flex;
 }
 
 .header-item{
-    display: block;
+    display: flex;
     position: sticky;
 }
-.header-item menu{
+#menu{
     padding: 13px;
     margin: 1px;
     display: flex;
     width: fit-content;
     align-items: flex-start;
 }
-#menu >span{
-    margin-left: 13px;
-    align-items: flex-start;
+.main-menu__menu {
+    position: relative;
+    overflow: hidden;
+    padding-right: 4px;
+    margin-left: -13px;
 }
-
-.header-item logo{
+.container #Menu-Menu>span{
+    margin-left: 13px;
+    font-size: 30px;
+    color: #2f3134;
+}
+.container #Menu-Assine>span{
+    display: inline-block;
+    text-align: center;
+    min-width: 5.25rem;
+    border-left: 1px solid #ebedef;
+}
+.container img{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
+
+.header-item logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 /*
 header .header-item{
     width: 30px;
