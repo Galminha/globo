@@ -15,6 +15,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+    font-size: 100%;
 	font: inherit;
     color: black;
     font-family: 'Roboto', sans-serif;
@@ -26,20 +27,22 @@ footer, header, hgroup, menu, nav, section {
 } */
 *{
     background-color: #fff;
-}
-img{
-    max-width: 100%;
+    box-sizing: inherit;
+    vertical-align: baseline;
 }
 
 header{
     display: flex;
-    width: 100%;
-    margin: 0px 172.5px 0px 172.5px;
-    padding: 0px 36px 0px 36px;
     box-sizing: 100%;
+    text-align: center;
+    list-style-type: none;
 }
+
 .container {
+    padding: 0 36px;
+    max-width: 1320px;
     display: flex;
+    align-items: center;
 }
 
 .header-item{
@@ -54,14 +57,13 @@ header{
     align-items: flex-start;
 }
 .main-menu__menu {
-    position: relative;
+    position: center;
     overflow: hidden;
     padding-right: 4px;
     margin-left: -13px;
 }
 .container #Menu-Menu>span{
     margin-left: 13px;
-    font-size: 30px;
     color: #2f3134;
 }
 .container #Menu-Assine>span{
@@ -75,14 +77,58 @@ header{
     justify-content: center;
     align-items: center;
 }
-
+.header-grid__logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.header-grid__logo__link {
+    margin: auto 0;
+    display: flex;
+}
 .header-item logo img{
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
-
+.auxiliary-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: -13px;
+    text-align: center;
+    list-style-type: none;
+}
+.header-contaglobo {
+    display: inline-flex;
+    align-items: center;
+}
+.tooltip-contaglobo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auxiliary-menu__search {
+    border-left: 1px solid #ebedef;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+/*lista*/
+.header-titles{
+    list-style-type: none;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 10px 12px;
+    vertical-align: baseline;
+}
 /*
 header .header-item{
     width: 30px;
