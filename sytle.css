@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
     box-sizing: inherit;
     vertical-align: baseline;
     --theme-entreteriment: #ff6700;
+    --theme-notice: #06aa48;
     --text:#2f3134;
 }
 
@@ -190,6 +191,8 @@ footer, header, hgroup, menu, nav, section {
 .post-body{
     display: flex;
     Justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
 }
 .post-body img{
     margin-bottom: 12px;
@@ -201,6 +204,9 @@ footer, header, hgroup, menu, nav, section {
     padding-left: 36px;
     padding-top: 10px;
     font-size: 20px;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 1px solid #ebedef;
 }
 /*========== Coluna 2 - noticia 1 ============*/
 .post-1{
@@ -266,4 +272,117 @@ footer, header, hgroup, menu, nav, section {
 }
 .bullet li {
     color: var(--text);
+}
+
+/*========== Coluna 1 - noticia 2 ============*/
+.post-2{
+    width: 240px;
+    height: 220px;
+}
+
+.post-2 a {
+    text-decoration: none;
+}
+.post-2-tittle{
+    color:var(--theme-entreteriment);
+}
+.bullet{
+    margin-top: 12px;
+    height: 45px;
+    font-size: 15px;
+    padding-left: 12px;
+}
+.bullet li {
+    color: var(--text);
+}
+::marker{
+    color: var(--theme-entreteriment);
+}
+/*========== Coluna 1 - noticia 3 ============*/
+.post-3{
+    width: 240px;
+    height: 220px;
+}
+
+.post-3 a {
+    text-decoration: none;
+}
+.post-3-tittle{
+    color:var(--theme-entreteriment);
+}
+x
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIXO*/
+/*========== Container - conteúdo ============*/
+.section-center{
+    padding: 0 36px;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*========== Noticia - Post coluna 1 ============*/
+.post-body-center{
+    display: flex;
+    Justify-content: center;
+    width: 252px;
+}
+.post-body-center img{
+    margin-bottom: 12px;
+    border-radius: 12px;
+    width: 240px;
+    height: 128px;
+}
+.post-column-1{
+    padding-left: 36px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+/*========== Coluna 1 (MEIO) - noticia 1 ============*/
+.post-1-center{
+    width: 240px;
+    height: 220px;
+}
+.post-1-center a {
+    text-decoration: none;
+}
+.post-1-center-tittle{
+    color: var(--theme-notice);
+    
+}
+/*========== Coluna 1 (MEIO) - noticia 2 ============*/
+.post-column-1{
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 1px solid #ebedef;
+}
+.post-2-center{
+    width: 240px;
+    height: 220px;
+}
+
+.post-2-center a {
+    text-decoration: none;
+}
+.post-2-center-tittle{
+    color:var(--theme-notice);
+}
+.bullet-center{
+    margin-top: 12px;
+    height: 45px;
+    font-size: 15px;
+    padding-left: 12px;
+}
+.bullet-center li {
+    color: var(--text);
+}
+/*========== Coluna 1 (MEIO) - noticia 3 ============*/
+.post-3-center{
+    width: 240px;
+    height: 220px;
+}
+
+.post-3-center a {
+    text-decoration: none;
+}
+.post-3-center-tittle{
+    color:var(--theme-notice);
 }
