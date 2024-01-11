@@ -34,7 +34,12 @@ footer, header, hgroup, menu, nav, section {
     --theme-oglobo: #1e4c9a;
     --text:#2f3134;
 }
-
+a {
+        text-decoration: none;  
+}
+img {
+    max-width: 100%;
+}
 /*========== Container principal ============*/
 .container {
     margin-left: auto;
@@ -125,8 +130,6 @@ footer, header, hgroup, menu, nav, section {
     margin-left: auto;
     margin-right: auto;
     font-size: 15px;
-    list-style-type: none;
-    text-decoration: none;
 }
 .wapper-titles{
     border: 1px solid #ebedef;
@@ -190,13 +193,13 @@ footer, header, hgroup, menu, nav, section {
     margin-left: auto;
     margin-right: auto;
 }
-/*========== Noticia - Post coluna 2 ============*/
+/*========== Colunas (1 e 2) ============*/
 .post-body{
     display: flex;
     flex-direction: row-reverse;
     Justify-content: flex-start;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
 }
 .post-body img{
     margin-bottom: 12px;
@@ -204,7 +207,7 @@ footer, header, hgroup, menu, nav, section {
     width: 240px;
     height: 128px;
 }
-.post-column-2{
+.post-column{
     padding-left: 36px;
     padding-top: 10px;
     font-size: 20px;
@@ -212,39 +215,20 @@ footer, header, hgroup, menu, nav, section {
     border-bottom: 0;
     border-left: 1px solid #ebedef;
 }
-/*========== Coluna 2 - noticia 1 ============*/
-.post-1{
+/*========== Coluna Entreterimento ============*/
+.post{
     width: 240px;
     height: 220px;
+    margin-bottom: 52px;
+    padding-top: 10px;
+    font-size: 20px;
 }
-.post-1 a {
-    text-decoration: none;
-}
-.post-1-tittle{
+.post h2{
     color: var(--theme-entreteriment);
     
 }
-/*========== Coluna 2 - Espaçamento ============*/
-.wapper-void{
-    margin-bottom: 52px;
-}
-/*========== Coluna 2 - noticia 2 ============*/
-.post-column-2{
-    border-top: 0;
-    border-bottom: 0;
-    border-left: 1px solid #ebedef;
-}
-.post-2{
-    width: 240px;
-    height: 220px;
-}
 
-.post-2 a {
-    text-decoration: none;
-}
-.post-2-tittle{
-    color:var(--theme-entreteriment);
-}
+/*========== Bullet ============*/
 .bullet{
     margin-top: 12px;
     height: 45px;
@@ -254,247 +238,87 @@ footer, header, hgroup, menu, nav, section {
 .bullet li {
     color: var(--text);
 }
-::marker{
+.post ::marker{
     color: var(--theme-entreteriment);
 }
-/*========== Coluna 2 - noticia 3 ============*/
-.post-3{
-    width: 240px;
-    height: 220px;
-}
-
-.post-3 a {
-    text-decoration: none;
-}
-.post-3-tittle{
-    color:var(--theme-entreteriment);
-}
-.bullet{
-    margin-top: 12px;
-    height: 45px;
-    font-size: 15px;
-}
-.bullet li {
-    color: var(--text);
-}
-
-/*========== Coluna 1 - noticia 2 ============*/
-.post-2{
-    width: 240px;
-    height: 220px;
-}
-
-.post-2 a {
-    text-decoration: none;
-}
-.post-2-tittle{
-    color:var(--theme-entreteriment);
-}
-.bullet{
-    margin-top: 12px;
-    height: 45px;
-    font-size: 15px;
-    padding-left: 12px;
-}
-.bullet li {
-    color: var(--text);
-}
-::marker{
-    color: var(--theme-entreteriment);
-}
-/*========== Coluna 1 - noticia 3 ============*/
-.post-3{
-    width: 240px;
-    height: 220px;
-}
-
-.post-3 a {
-    text-decoration: none;
-}
-.post-3-tittle{
-    color:var(--theme-entreteriment);
-}
-/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIXO*/
-
-/*========== Noticia - Post coluna 1 ============*/
-.post-body-center{
-    display: flex;
-    Justify-content: center;
-    width: 252px;
-}
-.post-body-center img{
-    margin-bottom: 12px;
-    border-radius: 12px;
-    width: 240px;
-    height: 128px;
-}
-.post-column-1{
-    padding-left: 36px;
+/*========== Coluna Notice ============*/
+.column-entreteriment{
     padding-right: 36px;
-    padding-top: 10px;
-    margin-right: 36px;
-    font-size: 20px;
 }
-/*========== Coluna 1 (MEIO) - noticia 1 ============*/
-.post-1-center{
-    width: 240px;
-    height: 220px;
+.column-entreteriment h2{
+    color:var(--theme-notice);
 }
-.post-1-center a {
-    text-decoration: none;
-}
-.post-1-center-tittle{
+
+.column-entreteriment ::marker{
     color: var(--theme-notice);
 }
-/*========== Coluna 1 (MEIO) - noticia 2 ============*/
-.post-column-1{
-    border-top: 0;
-    border-bottom: 0;
-    border-left: 1px solid #ebedef;
-}
-.post-2-center{
-    width: 240px;
-    height: 220px;
-}
 
-.post-2-center a {
-    text-decoration: none;
-}
-.post-2-center-tittle{
-    color:var(--theme-notice);
-}
-.bullet-center{
-    margin-top: 12px;
-    height: 45px;
-    font-size: 15px;
-    padding-left: 12px;
-}
-.bullet-center li {
-    color: var(--text);
-}
-/*========== Coluna 1 (MEIO) - noticia 3 ============*/
-.post-3-center{
-    width: 240px;
-    height: 220px;
-}
-
-.post-3-center a {
-    text-decoration: none;
-}
-.post-3-center-tittle{
-    color:var(--theme-notice);
-}
-/*MAIN*/
-/*========== Container - conteúdo ============*/
+/*========== Centro ============*/
 .section-main{
-    padding: 0 36px;
-    max-width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 730px;
 }
-/*========== Noticia - MAIN ============*/
-.post-body-main{
-    display: flex;
+/*==========Noticia - MAIN ============*/
+.main {
+    height: 300px;
+    width: 700px;
+    margin-bottom: 30px;
 }
-.post-main{
+.main h2{
     margin-bottom: 24px;
     padding-top: 10px;
     font-size: 64px;
-}
-.post-main a {
-    text-decoration: none;
-}
-.post-main-tittle{
-    color:var(--theme-news);
+    color: var(--theme-news);
 }
 /*========== Noticia - bullet  ============*/
+.bullet-main li {
+    padding-left: 0px;
+}
 .bullet-main{
     margin-top: 12px;
     height: 45px;
     font-size: 18px;
-    padding-left: 12px;
-}
-.bullet-main li {
-    color: var(--text);
     padding: 4px 0;
+    padding-left: 15px;
+}
+.bullet-main ::marker{
+    color: var(--theme-news);
+    padding: 0 4px;
 }
 
-/*========== Mini noticias  ============*/
-.post-mini{
+/*========== Section Mini noticias  ============*/
+.section-mini{
     margin: 0px 36px 0px 0px;
     padding-top: 24px;
+    padding-bottom: 24px;
+    height: 245px;
     border-top: 1px solid #ebedef;
-}
-.mini-1{
-    max-width: 192px;
-    max-height: 255px;
-}
-/*========== Mini noticias - Coluna 1  ============*/
-.post-mini-col-1 {
-    font-size: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.post-mini-col-1 img{
+/*========== Mini noticias  ============*/
+.post-mini{
+    max-width: 192px;
+    height: 255px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.post-mini img {
     margin-bottom: 12px;
     margin-bottom: 12px;
     border-radius: 12px;
     width: 192px;
     height: 110px;
 }
-.post-mini-col-1 a {
-        text-decoration: none;
+.post-mini h2 {
+    color: var(--theme-news);
 }
-.mini-1-tittle{
-    color: var(--theme-oglobo);
+.post-mini ::marker {
+    color: var(--theme-news);
 }
 /*========== Mini - bullet  ============*/
 .bullet-mini{   
-    margin-top: 12px;
+    margin-top: 10px;
     height: 45px;
     font-size: 15px;
     padding-left: 12px;
-}
-.bullet-mini li {
-    color: var(--text);
-    padding: 4px 0;
-}
-/*========== Mini - noticia 2 ============*/
-.mini-2{
-    max-width: 192px;
-    max-height: 255px;
-    font-size: 20px;
-}
-.mini-2 img{
-    margin-bottom: 12px;
-    margin-bottom: 12px;
-    border-radius: 12px;
-    width: 192px;
-    height: 110px;
-}
-.mini-2 a {
-        text-decoration: none;
-}
-.mini-2-tittle{
-    color: var(--theme-oglobo);
-}
-
-/*========== Mini - noticia 3 ============*/
-.mini-3{
-    max-width: 192px;
-    max-height: 255px;
-    font-size: 20px;
-}
-.mini-3 img{
-    margin-bottom: 12px;
-    margin-bottom: 12px;
-    border-radius: 12px;
-    width: 192px;
-    height: 110px;
-}
-.mini-3 a {
-        text-decoration: none;
-}
-.mini-3-tittle{
-    color: var(--theme-notice);
 }
